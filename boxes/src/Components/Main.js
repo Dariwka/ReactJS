@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
-import AnimalList from "./AnimalList";
-import BoxesList from "./BoxesList";
+import AnimalsList from "./Animals/AnimalsList";
+import BoxesList from "./Boxes/BoxesList";
 
 const Home = () => {
     return (
@@ -44,7 +44,7 @@ const Main = () => {
                 <Route path="/" exact component={Home} />
                 <Route path="/gallery" component={Gallery} />
                 <Route path="/boxes" component={BoxesList} />
-                <Route path="/animals" component={AnimalList} />
+                <Route path="/animals" component={AnimalsList} />
             </Switch>
             <h1>Hello world</h1>
         </div>

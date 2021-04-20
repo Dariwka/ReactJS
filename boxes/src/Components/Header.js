@@ -1,10 +1,13 @@
 import React from "react";
 
 const Header = () => {
-    return (<nav id="header">
-        <div><h1>LOGO</h1>
-            <p>Welcome line in header</p></div>
-    </nav>);
+    return (
+        <header>
+            <div>
+                <h1>LOGO</h1>
+            </div>
+        </header>
+    );
 };
 
 export default Header;
