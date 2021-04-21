@@ -28,12 +28,14 @@ const Recipes = () => {
 
   return (
     <div className="meal">
-      <div className="img-container">
+      <div className="meal-img">
         <img src={strMealThumb} alt={strMeal} />
       </div>
-      <div>
-        <h2 className="meal-title">{strMeal}</h2>
-        <p className="meal-instruction">{strInstructions}</p>
+      <div className="meal-details">
+        <h3 className="meal-title">{strMeal}</h3>
+        <p className="meal-instruction">
+          {strInstructions.substring(0, 300) + "..."}
+        </p>
         <ul className="meal-info">
           <li>
             Category:

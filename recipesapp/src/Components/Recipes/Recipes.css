@@ -1,24 +1,59 @@
-.meallList {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 1rem;
-  padding: 1rem;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
 }
 
-.mealCard {
-  background: #f4f4f4;
+body {
+  background-color: rgb(255, 242, 220);
+  font-family: "Poppins", sans-serif;
+}
+
+.meal {
+  background-color: white;
   border-radius: 5px;
-  box-shadow: 0 0 5px #333;
-  padding: 1rem;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 3px 5px rgb(95, 93, 73);
 }
 
-.mealCard img {
-  width: 100%;
-  height: 200px;
+.meal-img {
+  flex: 1;
+}
+
+.meal-img img {
   object-fit: cover;
-  display: block;
+  height: 100%;
+  width: 100%;
 }
 
-.mealCard button {
-  margin: 2rem;
+.meal-details {
+  padding: 30px;
+  flex: 2;
+}
+
+.meal-title {
+  margin: 0 0 20px;
+  color: brown;
+}
+.meal-instruction {
+  font-size: 14px;
+}
+.meal-info {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.meal-info li {
+  color: rgb(155, 139, 139);
+  font-size: 12px;
+  font-weight: 300;
+  margin-right: 50px;
+}
+
+.mail-info li strong {
+  color: rgb(163, 74, 74);
+  font-size: 18px;
+  display: block;
 }

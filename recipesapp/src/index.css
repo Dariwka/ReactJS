@@ -2,9 +2,9 @@
 
 body {
   margin: 0;
-  font-size: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #c4a4d4;
   text-align: center;
+  background: rgb(250, 244, 224);
 }

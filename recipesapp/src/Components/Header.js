@@ -1,13 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
+import Nav from "./Nav";
 
-const Header = () => {
-  return (
-    <header>
-      <div>
-        <h1>LOGO</h1>
-      </div>
-    </header>
-  );
-};
-
-export default Header;
+export default class Header extends Component {
+  render() {
+    return (
+      <header>
+        <h1>Random Recipes</h1>
+        <Nav />
+      </header>
+    );
+  }
+}
