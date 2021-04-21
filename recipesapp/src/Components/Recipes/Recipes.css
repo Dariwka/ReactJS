@@ -4,20 +4,48 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: white;
+  --secondary-color: rgb(246, 3, 3);
+  --black-color: #111;
+  --orange: orangered;
+}
+
 body {
   background-color: rgb(255, 242, 220);
   font-family: "Poppins", sans-serif;
 }
 
-.meal {
-  background-color: white;
+.container-recipes {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 800px;
+}
+
+.btn-recipes {
+  background-color: var(--orange);
+  color: var(--primary-color);
+  border: none;
   border-radius: 5px;
-  overflow: hidden;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 20px 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgb(95, 93, 73);
+}
+.meal {
+  background-color: var(--primary-color);
   display: flex;
-  box-shadow: 0 3px 5px rgb(95, 93, 73);
+  box-shadow: 0 10px 10px rgb(95, 93, 73);
 }
 
 .meal-img {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
   flex: 1;
 }
 
@@ -29,12 +57,13 @@ body {
 
 .meal-details {
   padding: 30px;
+  position: relative;
   flex: 2;
 }
 
 .meal-title {
   margin: 0 0 20px;
-  color: brown;
+  color: var(--secondary-color);
 }
 .meal-instruction {
   font-size: 14px;
@@ -46,14 +75,19 @@ body {
 }
 
 .meal-info li {
-  color: rgb(155, 139, 139);
+  color: grey;
   font-size: 12px;
   font-weight: 300;
   margin-right: 50px;
 }
 
 .mail-info li strong {
-  color: rgb(163, 74, 74);
   font-size: 18px;
   display: block;
+}
+
+.meal-details .btn-recipes {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
 }
