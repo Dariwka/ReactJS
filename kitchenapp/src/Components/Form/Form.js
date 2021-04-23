@@ -6,14 +6,8 @@ const Form = ({ submit, change }) => {
     <div className="form">
       <form onSubmit={submit}>
         <div>
-          <label htmlFor="fname">First name:</label>
-          <input
-            type="text"
-            id="fname"
-            name="fname"
-            onChange={change}
-            required
-          />
+          <label htmlFor="name">Author Name:</label>
+          <input type="text" id="name" name="name" onChange={change} required />
         </div>
         <div>
           <label htmlFor="lname">Last name:</label>
@@ -37,7 +31,7 @@ const Form = ({ submit, change }) => {
         </div>
         <div>
           <label htmlFor="role">Role:</label>
-          <select name="role" onChange={change}>
+          <select id="role" name="role" onChange={change}>
             <option value="Teacher">Teacher</option>
             <option value="Student">Student</option>
             <option value="Another">Another</option>

@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import Recipes from "./Recipes/Recipes";
-import About from "./About";
-import Contacts from "./Contacts";
-import Home from "./Home";
-import Meal from "./Recipes/Meal";
+
+import RecipesList from "./Recipes/RecipesList";
+
+import About from "../Pages/About";
+import Contacts from "../Pages/Contacts";
+import Home from "../Pages/Home";
 
 class Main extends Component {
   render() {
@@ -13,10 +14,9 @@ class Main extends Component {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/recipes" component={Recipes} />
+          <Route path="/recipes" component={RecipesList} />
           <Route path="/contacts" component={Contacts} />
         </Switch>
-        <Meal />
       </main>
     );
   }

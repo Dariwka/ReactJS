@@ -19,7 +19,7 @@ class Header extends Component {
     return (
       <>
         <Router>
-          <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
+          <Navbar collapseOnSelect expand="md" bg="danger" variant="dark">
             <Container>
               <Navbar.Brand href="/">
                 <img

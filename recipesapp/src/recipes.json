@@ -1,0 +1,63 @@
+{
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Latvian Cold Beet Soup",
+        "image": ["/beetSoup.jpg"],
+        "recipeCategory": "Soup",
+        "recipeCuisine": "Latvia",
+        "prepTime": "PT20M",
+        "cookTime": "PT30M",
+        "totalTime": "PT50M",
+        "recipeYield": "4",
+        "description": "Latvian cold beet soup is loved all over the Baltic States and many other places as well. It is a refreshing soup for a hot summer day.  There are numerous variations to this dish and this one was excellent. The color is a spectacular bright pink.  It is served with a topping of a cut up hard-boiled egg, perfect. The soup is best served the next day when the flavors have a chance to meld together. Enjoy!",
+        "author": {
+          "@type": "Organization",
+          "name": "kitchenApp"
+        },
+        "recipeIngredient": [
+          "3 small-medium beets",
+          "2 green cucumbers Persian",
+          "3-4 green onions chopped",
+          "3-4 Tbsp finely chopped fresh dill",
+          "1 quart kefir or buttermilk",
+          "1 Tbsp grated horseradish",
+          "1 Tbsp. fresh lemon juice",
+          "salt to taste",
+          "freshly ground black pepper to taste",
+          "2-4 eggs"
+        ],
+        "recipeInstructions": [
+          {
+            "name": "Step #1",
+            "text": "Cut off the greens and use for another purpose. Wash the beets, Put them in a pan with some water and cook until tender. About 30 mins. Let them cool completely, then peel and grate coarsely."
+          },
+          {
+            "name": "Step #2",
+            "text": "Hard-boil the eggs, then cool under cold water Peel and cut into half lengthwise"
+          },
+          {
+            "name": "Step #3",
+            "text": "Wash the cucumbers, cut into small dice."
+          },
+          {
+            "name": "Step #4",
+            "text": "Take a large bowl, throw in the grated beets. Stir in some of the kefir, then season the soup base with horseradish and some salt and pepper. Add the rest of the ingredients, except boiled eggs."
+          },
+          {
+            "name": "Step #6",
+            "text": "Adjust seasoning as necessary."
+          },
+          {
+            "name": "Step #6",
+            "text": "Refrigerate overnight is best but at least a couple of hours."
+          },
+          {
+            "name": "Step #7",
+            "text": "Serve very cold, topping each portion with a boiled egg half or two."
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,3 +1,4 @@
 import Recipes from "./Recipes";
+import Meal from "./Meal";
 
-export { Recipes };
+export { Recipes, Meal };

@@ -10,45 +10,55 @@ import NotesList from "./Components/NotesList";
 
 class App extends Component {
   state = {
-    fname: "",
-    lname: "",
-    phone: "",
-    role: "",
-    message: "",
-    showPopup: false,
     notes: [],
+    inputData: {
+      fname: "",
+      lname: "",
+      phone: "",
+      role: "",
+      message: "",
+    },
+    showPopup: false,
   };
+
   componentDidMount() {
-    fetch("http://localhost:3002/notes")
+    fetch("http://localhost:3000/notes")
       .then((resp) => resp.json())
       .then((data) => this.setState({ notes: data }));
   }
 
   changeHandler = (e) => {
     this.setState({
-      [e.target.name]: e.target.value,
+      inputData: { ...this.state.inputData, [e.target.name]: e.target.value },
     });
   };
 
   popupHandler = (e) => {
-    this.setState({ showPopup: true });
+    this.setState({
+      showPopup: true,
+    });
     e.preventDefault();
   };
 
-  render() {
-    const props = {
-      firstname: this.state.fname,
-      lastname: this.state.lname,
-      phone: this.state.phone,
-      role: this.state.role,
-      message: this.state.message,
+  sendDataHandler = () => {
+    const requestOptions = {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(this.state.inputData),
     };
+    fetch("http://localhost:3000/notes", requestOptions);
+    alert("Note is posted", window.location.reload());
+  };
+
+  render() {
     return (
       <div>
         <Form change={this.changeHandler} submit={this.popupHandler} />
-        <View {...props} />
+        <View {...this.state.inputData} />
         <NotesList notes={this.state.notes} />
-        {this.state.showPopup && <Popup {...props} />}
+        {this.state.showPopup && (
+          <Popup {...this.state.inputData} submit={this.sendDataHandler} />
+        )}
       </div>
     );
   }

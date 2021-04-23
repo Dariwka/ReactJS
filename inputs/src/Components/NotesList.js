@@ -3,15 +3,10 @@ import React from "react";
 const NotesList = ({ notes }) => {
   return (
     <div>
-      <h1>My Notes</h1>
+      <h1>My notes</h1>
       <ul>
-        {notes.map((notes) => {
-          return (
-            <li key={notes.id}>
-              {notes.message}
-              {notes.role}
-            </li>
-          );
+        {notes.map((note) => {
+          return <li key={note.id}>{note.message}</li>;
         })}
       </ul>
     </div>
