@@ -6,47 +6,45 @@ const Form = ({ submit, change }) => {
     <div className="form">
       <form onSubmit={submit}>
         <div>
-          <label htmlFor="name">Author Name:</label>
-          <input type="text" id="name" name="name" onChange={change} required />
-        </div>
-        <div>
-          <label htmlFor="lname">Last name:</label>
+          <label htmlFor="recipes">Recipe's Name:</label>
           <input
             type="text"
-            id="lname"
-            name="lname"
+            id="recipes"
+            name="recipes"
             onChange={change}
             required
           />
         </div>
         <div>
-          <label htmlFor="phone">Phone number:</label>
+          <label htmlFor="recipeCategory">Category:</label>
           <input
-            type="phone"
-            id="phone"
-            name="phone"
+            type="recipeCategory"
+            id="recipeCategory"
+            name="recipeCategory"
             onChange={change}
             required
           />
         </div>
         <div>
-          <label htmlFor="role">Role:</label>
-          <select id="role" name="role" onChange={change}>
-            <option value="Teacher">Teacher</option>
-            <option value="Student">Student</option>
-            <option value="Another">Another</option>
-          </select>
+          <label htmlFor="recipeCuisine">Area:</label>
+          <input
+            type="recipeCuisine"
+            id="recipeCuisine"
+            name="recipeCuisine"
+            onChange={change}
+            required
+          />
         </div>
         <div>
-          <label htmlFor="message">Message:</label>
+          <label htmlFor="description">Description:</label>
           <textarea
-            name="message"
-            id="message"
+            name="description"
+            id="description"
             onChange={change}
             required
           ></textarea>
         </div>
-        <input type="submit" value="Send" />
+        <input className="send" type="submit" value="Send" />
       </form>
     </div>
   );

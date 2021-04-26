@@ -15,17 +15,7 @@
         "@type": "Organization",
         "name": "kitchenApp"
       },
-      "recipeIngredient": [
-        "3 small-medium beets",
-        "2 green cucumbers Persian",
-        "3-4 green onions chopped",
-        "3-4 Tbsp finely chopped fresh dill",
-        "1 quart kefir or buttermilk",
-        "1 Tbsp grated horseradish",
-        "1 Tbsp. fresh lemon juice",
-        "salt to taste",
-        "freshly ground black pepper to taste",
-        "2-4 eggs"
+      "recipeIngredient": [ "3 small-medium beets, ", "2 green cucumbers Persian, ", "3-4 green onions chopped, ", "3-4 Tbsp finely chopped fresh dill, ", "1 quart kefir or buttermilk, ", "1 Tbsp grated horseradish, ", "1 Tbsp. fresh lemon juice, ", "salt to taste, ", "freshly ground black pepper to taste, ", "2-4 eggs. "
       ],
       "recipeInstructions": [
         {
@@ -55,6 +45,151 @@
         {
           "name": "Step #7",
           "text": "Serve very cold, topping each portion with a boiled egg half or two."
+        }
+      ]
+    }, 
+    {
+      "id": 2,
+      "name": "Bread Soup",
+      "image": ["breadSoup"],
+      "recipeCategory": "Dessert ",
+      "recipeCuisine": "Latvia",
+      "prepTime": "20",
+      "cookTime": "30",
+      "totalTime": "50",
+      "recipeYield": "1",
+      "description": "Maizes zupa is a delicious way to use any leftover rye bread as it is boiled in water over low heat and infused with sweetness from dried fruits. The addition of cinnamon, cloves, and a little brown sugar enhances the tangy flavor of the rye. When it’s complete, serve cold and top with whipped cream.",
+      "author": {
+        "@type": "Organization",
+        "name": "kitchenApp"
+      },
+      "recipeIngredient": [
+        "2/3 cups of stale toasted dark rye bread, ",
+        "2 cups boiling water, ",
+        "1/4 cup sugar, ",
+        "1/4 cup brown sugar, ",
+        "2 tbsp. cranberry juice concentrate, ",
+        "1/3 cup assorted dried fruit (apples, raisins, prunes), finely chopped, ",
+        "Cinnamon, ",
+        "Ground cloves, ",
+        "Whipped cream, "
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Step #1",
+          "text": "Pre-heat oven to 350°. Place rye bread on a baking sheet and bake until lightly toasted and dry."
+        }
+        ,
+        {
+          "@type": "HowToStep",
+          "name": "Step #2",
+          "text": "Grate the bread coarsely or use a food processor to blend."
+        }
+        ,
+        {
+          "@type": "HowToStep",
+          "name": "Step #3",
+          "text": "Bring water to boil in a small sauce pot, and soak grated bread in water until it is soft."
+        }
+        ,
+        {
+          "@type": "HowToStep",
+          "name": "Step #4",
+          "text": "Stir in sugar, cinnamon, cloves, and fruit."
+        }
+        ,
+        {
+          "@type": "HowToStep",
+          "name": "Step #6",
+          "text": "Continue to cook over low heat for about 30 minutes or until the fruit and sugar has permeated through."
+        }
+        ,
+        {
+          "@type": "HowToStep",
+          "name": "Step #6",
+          "text": "Remove from heat and stir in cranberry concentrate."
+        }
+        ,
+        {
+          "@type": "HowToStep",
+          "name": "Step #7",
+          "text": "Chill completely. Serve with a dollop of whipped cream on top."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Bacon Pie (Piragi)",
+      "image": ["/piragi"],
+      "recipeCategory": "Dessert ",
+      "recipeCuisine": "Latvia",
+      "prepTime": "100",
+      "cookTime": "20",
+      "totalTime": "120",
+      "description": "Speķa pīrāgi or bacon pies/pasties have become the most popular and most recognised of Latvian treats. Traditionally they would be eaten at any major celebration, be it birthday, Chistmas or Jāņi; hand-made from yeasty dough and streaky smoked bacon.",
+      "author": {
+        "@type": "Organization",
+        "name": "kitchenApp"
+      },
+      "recipeIngredient": [
+        "1 cup milk (preferably full-fat)",
+        "¼ cup coconut sugar",
+        "2 packages dry active yeast",
+        "¼ cup butter, cubed",
+        "¼ cup Greek yogurt",
+        "1 egg, lightly whisked finely chopped",
+        "2½ cups organic pastry flour",
+        "1½ teaspoon salt",
+        "1 pound smoked bacon",
+        "1 medium sized yellow onion, diced",
+        "½ cup mushrooms, sliced",
+        "1 teaspoon caraway seeds",
+        "1 teaspoon salt",
+        "1 teaspoon black pepper",
+        "1 egg, beaten (for egg wash)"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Step #1",
+          "text": "Pre-heat oven to 350°. Place rye bread on a baking sheet and bake until lightly toasted and dry."
+        }
+        ,
+        {
+          "@type": "HowToStep",
+          "name": "Step #2",
+          "text": "Grate the bread coarsely or use a food processor to blend."
+        }
+        ,
+        {
+          "@type": "HowToStep",
+          "name": "Step #3",
+          "text": "Bring water to boil in a small sauce pot, and soak grated bread in water until it is soft."
+        }
+        ,
+        {
+          "@type": "HowToStep",
+          "name": "Step #4",
+          "text": "Stir in sugar, cinnamon, cloves, and fruit."
+        }
+        ,
+        {
+          "@type": "HowToStep",
+          "name": "Step #6",
+          "text": "Continue to cook over low heat for about 30 minutes or until the fruit and sugar has permeated through."
+        }
+        ,
+        {
+          "@type": "HowToStep",
+          "name": "Step #6",
+          "text": "Remove from heat and stir in cranberry concentrate."
+        }
+        ,
+        {
+          "@type": "HowToStep",
+          "name": "Step #7",
+          "text": "Chill completely. Serve with a dollop of whipped cream on top."
         }
       ]
     }

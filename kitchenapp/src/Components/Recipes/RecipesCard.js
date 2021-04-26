@@ -1,5 +1,4 @@
 import React from "react";
-import RecipesPopup from "../Recipes/RecipesPopup";
 
 const RecipesCard = ({
   img,
@@ -14,11 +13,11 @@ const RecipesCard = ({
     <section className="container-recipes">
       <h2>Featured Meal</h2>
       <div className="recipes">
-        <h3 className="recipes-title">{name}</h3>
         <div className="recipes-img">
-          <img src={`assets/img/${img}.jpg`} />
+          <img src={`assets/img/${img}.jpg`} alt={""} />
         </div>
         <div className="recipes-details">
+          <h3 className="recipes-title">{name}</h3>
           <p className="recipe-description">Description: {description}</p>
           <ul className="recipe-info">
             <li>
@@ -28,16 +27,6 @@ const RecipesCard = ({
             <li>
               Area:
               <strong> {recipeCuisine}</strong>
-            </li>
-            <li>
-              Time:
-              <strong> {cookTime} min</strong>
-            </li>
-          </ul>
-          <ul className="recipe-ingredient">
-            <li>
-              Ingredients:
-              <strong> {recipeIngredient} </strong>
             </li>
           </ul>
           <button className="btn-recipes">

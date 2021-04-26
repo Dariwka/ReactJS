@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
+
+.form {
+  background: white;
+  color: black;
+  border-radius: 5px;
+  max-width: 100%;
+  width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 10px 10px rgb(95 93 73);
+}
+form {
+  padding: 20px;
+}
+
+label {
+  width: 150px;
+  display: inline-block;
+}
+
+form div {
+  margin: 1rem;
+}
+
+input#recipes,
+input#recipeCategory,
+input#recipeCuisine,
+textarea#description {
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid rgb(102, 102, 102);
+  border-radius: 5px;
+  width: 300px;
+  padding: 5px;
+}
+
+.apload {
+  background-color: rgb(84, 133, 189);
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: none;
+  width: 100px;
+}
+
+textarea,
+select {
+  background: #f4f4f4;
+  border: 1px solid rgb(102, 102, 102);
+  width: 250px;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input.send {
+  background-color: orangered;
+  color: white;
+  text-transform: uppercase;
+  margin-left: 165px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type="file"] {
+  border-radius: 5px;
+  width: 200px;
+}

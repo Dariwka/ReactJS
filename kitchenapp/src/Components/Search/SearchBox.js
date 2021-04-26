@@ -2,7 +2,7 @@ import React from "react";
 
 const Searchbox = (props) => {
   return (
-    <div>
+    <div className="search">
       <input type="text" onChange={props.search} placeholder="Search Recipe" />
     </div>
   );

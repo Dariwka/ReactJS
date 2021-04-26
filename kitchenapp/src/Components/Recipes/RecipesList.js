@@ -1,15 +1,24 @@
 import React, { Component } from "react";
 import RecipesCard from "./RecipesCard";
 import SearchBox from "../Search/SearchBox";
+import Form from "../Form/Form";
+
 import "../Recipes/Recipes.css";
-import RecipesPopup from "../Recipes/RecipesPopup";
+import SendUp from "../SendUp/SendUp";
 
 class RecipesList extends Component {
   state = {
     recipes: [],
     isLoading: false,
     searchInput: "",
-    showRecipesPopup: false,
+    inputData: {
+      name: "",
+      image: "",
+      recipeCategory: "",
+      recipeCuisine: "",
+      description: "",
+    },
+    showSendUp: false,
   };
 
   componentDidMount() {
@@ -18,6 +27,12 @@ class RecipesList extends Component {
       .then((res) => res.json())
       .then((data) => this.setState({ recipes: data, isLoading: false }));
   }
+
+  changeHandler = (e) => {
+    this.setState({
+      inputData: { ...this.state.inputData, [e.target.name]: e.target.value },
+    });
+  };
 
   popupHandler = (e) => {
     this.setState({
@@ -31,6 +46,16 @@ class RecipesList extends Component {
       searchInput: event.target.value,
     });
     console.log(this.state.searchInput);
+  };
+
+  sendDataHandler = () => {
+    const requestOptions = {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(this.state.inputData),
+    };
+    fetch("http://localhost:3002/recipes", requestOptions);
+    alert("Your recipe is posted", window.location.reload());
   };
 
   render() {
@@ -47,8 +72,6 @@ class RecipesList extends Component {
           name={recipes.name}
           img={recipes.image}
           description={recipes.description.substring(0, 300) + "..."}
-          cookTime={recipes.cookTime}
-          recipeIngredient={recipes.recipeIngredient}
           recipeCuisine={recipes.recipeCuisine}
           recipeCategory={recipes.recipeCategory}
         />
@@ -57,7 +80,11 @@ class RecipesList extends Component {
     return (
       <div>
         <SearchBox search={this.searchValueHandler} />
-        <div className="recipes">{RecipesList}</div>
+        <Form change={this.changeHandler} submit={this.popupHandler} />
+        {this.state.showSendUp && (
+          <SendUp {...this.state.inputData} submit={this.sendDataHandler} />
+        )}
+        <div>{RecipesList}</div>
       </div>
     );
   }
