@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import RecipesCard from "./RecipesCard";
-import SearchBox from "../Search/SearchBox";
-import Form from "../Form/Form";
 
 import "../Recipes/Recipes.css";
-import SendUp from "../SendUp/SendUp";
 
 class RecipesList extends Component {
   state = {
@@ -79,11 +76,6 @@ class RecipesList extends Component {
     });
     return (
       <div>
-        <SearchBox search={this.searchValueHandler} />
-        <Form change={this.changeHandler} submit={this.popupHandler} />
-        {this.state.showSendUp && (
-          <SendUp {...this.state.inputData} submit={this.sendDataHandler} />
-        )}
         <div>{RecipesList}</div>
       </div>
     );

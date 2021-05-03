@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const RecipesCard = ({
   img,
@@ -6,8 +7,7 @@ const RecipesCard = ({
   description,
   recipeCategory,
   recipeCuisine,
-  cookTime,
-  recipeIngredient,
+  link,
 }) => {
   return (
     <section className="container-recipes">
@@ -29,9 +29,9 @@ const RecipesCard = ({
               <strong> {recipeCuisine}</strong>
             </li>
           </ul>
-          <button className="btn-recipes">
+          <Link className="btn-recipes" to={`/${link}`}>
             View Recipe <i className="fas fa-arrow-alt-circle-right"></i>
-          </button>
+          </Link>
         </div>
       </div>
     </section>

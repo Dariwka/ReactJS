@@ -23,6 +23,13 @@ body {
   width: 800px;
 }
 
+.container-meal {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1000px;
+}
+
 .btn-recipes {
   background-color: var(--orange);
   color: var(--primary-color);
@@ -35,6 +42,10 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   box-shadow: 0 5px 5px rgb(95, 93, 73);
+}
+
+a.btn-recipes {
+  text-decoration: none;
 }
 .recipes {
   background-color: var(--primary-color);
