@@ -13,7 +13,7 @@ const RecipeSingle = () => {
   useEffect(() => {
     if (!recipes) {
       axios
-        .get("http://localhost:3002/recipes/" + id)
+        .get("https://fast-gorge-19257.herokuapp.com/recipes/find" + id)
         .then((res) => setRecipe(res.data));
     }
   });
@@ -26,7 +26,7 @@ const RecipeSingle = () => {
   if (recipes) {
     recipeData = (
       <>
-        <Container className="single">
+        <Container key={recipes.id} className="single">
           <h3>{recipes.name}</h3>
           <p>
             <Image

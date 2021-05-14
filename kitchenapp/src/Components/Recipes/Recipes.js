@@ -9,7 +9,7 @@ const Recipes = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3002/recipes")
+      .get("https://fast-gorge-19257.herokuapp.com/recipe/all")
       .then((res) => setRecipes(res.data));
   }, []);
 

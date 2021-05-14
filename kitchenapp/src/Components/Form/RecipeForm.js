@@ -46,7 +46,8 @@ const RecipeForm = () => {
   };
 
   const submitData = (e) => {
-    axios.post("http://localhost:3002/recipes", data);
+    e.preventDefault();
+    axios.post("https://fast-gorge-19257.herokuapp.com/recipe/add", data);
   };
 
   return (
