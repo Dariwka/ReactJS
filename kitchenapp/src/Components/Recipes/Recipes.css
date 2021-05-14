@@ -110,7 +110,10 @@ h3 {
   font-weight: 300;
   margin-right: 50px;
 }
-
+.recipiesLists,
+.addForm {
+  padding-bottom: 100px;
+}
 .mail-info li strong {
   font-size: 18px;
   display: block;

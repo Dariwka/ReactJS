@@ -5,7 +5,7 @@ import "../Recipes/Recipes.css";
 
 const RecipesList = ({ recipes }) => {
   return (
-    <div>
+    <div className="recipiesLists">
       {recipes.map((recipes) => (
         <RecipesCard
           key={recipes.id}

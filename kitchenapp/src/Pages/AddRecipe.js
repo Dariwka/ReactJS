@@ -3,7 +3,7 @@ import RecipeForm from "../Components/Form/RecipeForm";
 
 const AddRecipe = () => {
   return (
-    <div>
+    <div className="addForm">
       <RecipeForm />
     </div>
   );

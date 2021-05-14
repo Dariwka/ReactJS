@@ -5,7 +5,7 @@ const Searchbox = ({ search }) => {
   return (
     <div className="search">
       <Form>
-        <h4>Search recipe: </h4>
+        <p>Search recipe: </p>
         <Form.Group>
           <Form.Control type="text" name="name" onChange={search} />
         </Form.Group>
