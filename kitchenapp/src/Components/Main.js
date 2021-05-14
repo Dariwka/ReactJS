@@ -3,9 +3,10 @@ import { Switch, Route } from "react-router-dom";
 
 import Recipes from "../Components/Recipes/Recipes";
 
-import About from "../Pages/About";
 import Contacts from "../Pages/Contacts";
 import Home from "../Pages/Home";
+import AddRecipe from "../Pages/AddRecipe";
+import RecipeSingle from "./Recipes/RecipeSingle";
 
 class Main extends Component {
   render() {
@@ -13,9 +14,12 @@ class Main extends Component {
       <main>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
           <Route path="/recipes" component={Recipes} />
+          <Route path="/addrecipe" component={AddRecipe} />
           <Route path="/contacts" component={Contacts} />
+          <Route path="/:id">
+            <RecipeSingle />
+          </Route>
         </Switch>
       </main>
     );

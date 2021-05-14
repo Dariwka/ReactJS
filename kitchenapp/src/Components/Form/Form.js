@@ -6,14 +6,8 @@ const Form = ({ submit, change }) => {
     <div className="form">
       <form onSubmit={submit}>
         <div>
-          <label htmlFor="recipes">Recipe's Name:</label>
-          <input
-            type="text"
-            id="recipes"
-            name="recipes"
-            onChange={change}
-            required
-          />
+          <label htmlFor="name">Recipe's Name:</label>
+          <input type="text" id="name" name="name" onChange={change} required />
         </div>
         <div>
           <label htmlFor="recipeCategory">Category:</label>
@@ -40,6 +34,24 @@ const Form = ({ submit, change }) => {
           <textarea
             name="description"
             id="description"
+            onChange={change}
+            required
+          ></textarea>
+        </div>
+        <div>
+          <label htmlFor="recipeIngredient">Ingredients:</label>
+          <textarea
+            name="recipeIngredient"
+            id="recipeIngredient"
+            onChange={change}
+            required
+          ></textarea>
+        </div>
+        <div>
+          <label htmlFor="recipeInstructions">Instructions:</label>
+          <textarea
+            name="recipeInstructions"
+            id="recipeInstructions"
             onChange={change}
             required
           ></textarea>

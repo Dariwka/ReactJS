@@ -11,7 +11,7 @@ const RecipesCard = ({
 }) => {
   return (
     <section className="container-recipes">
-      <h2>Featured Meal</h2>
+      <h2>{name}</h2>
       <div className="recipes">
         <div className="recipes-img">
           <img src={`assets/img/${img}.jpg`} alt={""} />
@@ -29,8 +29,8 @@ const RecipesCard = ({
               <strong> {recipeCuisine}</strong>
             </li>
           </ul>
-          <Link className="btn-recipes" to={`/${link}`}>
-            View Recipe <i className="fas fa-arrow-alt-circle-right"></i>
+          <Link to={`/${link}`} className="btn-recipes">
+            View Recipe
           </Link>
         </div>
       </div>

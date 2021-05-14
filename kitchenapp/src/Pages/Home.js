@@ -1,12 +1,10 @@
-import React from "react";
-import RecipesList from "../Components/Recipes/RecipesList";
+import React, { Component } from "react";
+import CarouselBox from "../Components/Carousel/CarouselBox";
 
-const Home = () => {
-  return (
-    <div>
-      <RecipesList />
-    </div>
-  );
-};
+class Home extends Component {
+  render() {
+    return <CarouselBox />;
+  }
+}
 
 export default Home;

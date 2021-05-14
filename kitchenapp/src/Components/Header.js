@@ -6,7 +6,7 @@ export default class Header extends Component {
   render() {
     return (
       <header>
-        <img src={image} height={100} width={100} alt="logo" />
+        <img src={image} alt="logo" className="logo" />
         <h1>Kitchen App</h1>
         <Nav />
       </header>

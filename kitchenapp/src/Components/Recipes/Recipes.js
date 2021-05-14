@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import RecipesList from "./RecipesList";
 import SearchBox from "../Search/SearchBox";
-import Form from "../Form/Form";
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
@@ -15,8 +14,7 @@ const Recipes = () => {
   }, []);
 
   const searchValueHandler = (e) => {
-    setSearchInput(e.rarget.value);
-    console.log(searchInput);
+    setSearchInput(e.target.value);
   };
 
   const recipeFilter = recipes.filter((recipe) => {
@@ -26,7 +24,6 @@ const Recipes = () => {
   return (
     <div>
       <SearchBox search={searchValueHandler} />
-      <Form />
       <RecipesList recipes={recipeFilter} />
     </div>
   );

@@ -17,20 +17,18 @@ body {
 }
 
 .container-recipes {
-  padding: 20px;
+  padding: 40px;
   margin: 0 auto;
   max-width: 100%;
   width: 800px;
 }
 
-.container-meal {
-  padding: 20px;
-  margin: 0 auto;
-  max-width: 100%;
-  width: 1000px;
+div.single.container {
+  margin: 20px;
 }
 
-.btn-recipes {
+.btn-recipes,
+button.backToRecipe {
   background-color: var(--orange);
   color: var(--primary-color);
   border: none;
@@ -44,12 +42,27 @@ body {
   box-shadow: 0 5px 5px rgb(95, 93, 73);
 }
 
-a.btn-recipes {
+a.btn-recipes,
+button.backToRecipe {
   text-decoration: none;
 }
+
+a.btn-recipes:hover {
+  color: yellow;
+}
+
+button.backToRecipe:hover {
+  color: yellow;
+}
+
 .recipes {
   background-color: var(--primary-color);
   display: flex;
+  box-shadow: 0 10px 10px rgb(95, 93, 73);
+}
+
+div.single.container {
+  background-color: var(--primary-color);
   box-shadow: 0 10px 10px rgb(95, 93, 73);
 }
 
@@ -76,6 +89,12 @@ a.btn-recipes {
   margin: 0 0 20px;
   color: var(--secondary-color);
 }
+
+h3 {
+  color: var(--secondary-color);
+  padding: 20px;
+}
+
 .recipes-instruction {
   font-size: 14px;
 }
@@ -107,4 +126,9 @@ a.btn-recipes {
   padding: 20px;
   justify-items: right;
   display: grid;
+}
+
+.rounded {
+  float: left;
+  margin: 10px 30px 10px 10px;
 }
