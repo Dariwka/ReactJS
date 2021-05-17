@@ -13,7 +13,7 @@ const RecipeSingle = () => {
   useEffect(() => {
     if (!recipes) {
       axios
-        .get("https://fast-gorge-19257.herokuapp.com/recipes/find" + id)
+        .get("https://fast-gorge-19257.herokuapp.com/recipe/find/" + id)
         .then((res) => setRecipe(res.data));
     }
   });
@@ -26,48 +26,50 @@ const RecipeSingle = () => {
   if (recipes) {
     recipeData = (
       <>
-        <Container key={recipes.id} className="single">
-          <h3>{recipes.name}</h3>
-          <p>
-            <Image
-              src={`assets/img/${recipes.image}.jpg`}
-              height={400}
-              alt={recipes.name}
-              rounded
-            />
-            <strong>Description:</strong> {recipes.description}
-          </p>
-          <div>
+        <div key={recipes.id}>
+          <Container className="single">
+            <h3>{recipes.name}</h3>
             <p>
-              <strong>Category:</strong> {recipes.recipeCategory}
+              <Image
+                src={`assets/img/${recipes.image}.jpg`}
+                height={400}
+                alt={recipes.name}
+                rounded
+              />
+              <strong>Description:</strong> {recipes.description}
             </p>
-            <p>
-              <strong>Area:</strong> {recipes.recipeCuisine}
-            </p>
-            <p>
-              <strong>Cooking Time: </strong>
-              {recipes.cookTime}
-            </p>
-            <p>
-              <strong>Ingredients:</strong>
-            </p>
-            <ul>
-              {recipes.recipeIngredient.map((item) => {
-                return (
-                  <li key={item.id}>
-                    {item.quantity} ({item.ingName})
-                  </li>
-                );
-              })}
-            </ul>
-            <p>
-              <strong>Instructions:</strong> {recipes.recipeInstructions}
-            </p>
-          </div>
-          <button className="backToRecipe" onClick={() => history.goBack()}>
-            Back to recipes
-          </button>
-        </Container>
+            <div>
+              <p>
+                <strong>Category:</strong> {recipes.recipeCategory}
+              </p>
+              <p>
+                <strong>Area:</strong> {recipes.recipeCuisine}
+              </p>
+              <p>
+                <strong>Cooking Time: </strong>
+                {recipes.cookTime}
+              </p>
+              <p>
+                <strong>Ingredients:</strong>
+              </p>
+              <ul>
+                {recipes.recipeIngredient.map((item) => {
+                  return (
+                    <li key={item.id}>
+                      {item.quantity} ({item.ingName})
+                    </li>
+                  );
+                })}
+              </ul>
+              <p>
+                <strong>Instructions:</strong> {recipes.recipeInstruction}
+              </p>
+            </div>
+            <button className="backToRecipe" onClick={() => history.goBack()}>
+              Back to recipes
+            </button>
+          </Container>
+        </div>
       </>
     );
   }

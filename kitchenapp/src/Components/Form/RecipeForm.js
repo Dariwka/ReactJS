@@ -52,15 +52,10 @@ const RecipeForm = () => {
 
   return (
     <>
-      <Form className="form" onSubmit={submitData}>
+      <Form onSubmit={submitData} className="form">
         <Form.Group>
           <Form.Label htmlFor="name">Name: </Form.Label>
-          <Form.Control
-            type="text"
-            name="name"
-            id="name"
-            onChange={changeData}
-          />
+          <Form.Control type="text" name="name" onChange={changeData} />
         </Form.Group>
         <Form.Group>
           <Form.File id="image" onChange={changeData} label="Photo of Recipe" />
@@ -70,7 +65,6 @@ const RecipeForm = () => {
           <Form.Control
             type="text"
             name="recipeCategory"
-            id="recipeCategory"
             onChange={changeData}
           />
         </Form.Group>
@@ -79,18 +73,12 @@ const RecipeForm = () => {
           <Form.Control
             type="text"
             name="recipeCuisine"
-            id="recipeCuisine"
             onChange={changeData}
           />
         </Form.Group>
         <Form.Group>
           <Form.Label htmlFor="cookTime">Cooking Time: </Form.Label>
-          <Form.Control
-            type="text"
-            name="cookTime"
-            id="cookTime"
-            onChange={changeData}
-          />
+          <Form.Control type="text" name="cookTime" onChange={changeData} />
         </Form.Group>
         <Form.Group>
           <Form.Label htmlFor="description">Description: </Form.Label>
@@ -99,7 +87,6 @@ const RecipeForm = () => {
             rows={3}
             type="text"
             name="description"
-            id="description"
             onChange={changeData}
           />
         </Form.Group>
@@ -115,7 +102,6 @@ const RecipeForm = () => {
                     <Form.Control
                       type="text"
                       name="quantity"
-                      id="quantity"
                       onChange={(e) => changeIngData(e, i)}
                     />
                   </Col>
@@ -124,7 +110,6 @@ const RecipeForm = () => {
                     <Form.Control
                       type="text"
                       name="ingName"
-                      id="ingName"
                       onChange={(e) => changeIngData(e, i)}
                     />
                   </Col>
@@ -137,15 +122,12 @@ const RecipeForm = () => {
         <Button className="addMore" variant="outline-success" onClick={addMore}>
           add more
         </Button>
-
         <Form.Group>
           <Form.Label htmlFor="recipeInstructions">Instructions: </Form.Label>
           <Form.Control
             as="textarea"
             rows={3}
-            type="text"
-            name="textinst"
-            id="recipeInstructions"
+            name="recipeInstructions"
             onChange={changeData}
           />
         </Form.Group>

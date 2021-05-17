@@ -8,8 +8,8 @@ class CarouselBox extends Component {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://source.unsplash.com/800x400/?{meal}"
-            alt="meal"
+            src="https://source.unsplash.com/800x400/?{cooking}"
+            alt="cooking"
           />
           <Carousel.Caption>
             <h2>Cooking is the Best Way for Relaxing</h2>
@@ -22,8 +22,8 @@ class CarouselBox extends Component {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://source.unsplash.com/800x400/?{salad}"
-            alt="salad"
+            src="https://source.unsplash.com/800x400/?{vegetables}"
+            alt="vegetables"
           />
           <Carousel.Caption>
             <h2>Cooking is the Best Way for Relaxing</h2>
@@ -36,8 +36,8 @@ class CarouselBox extends Component {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://source.unsplash.com/800x400/?{food}"
-            alt="food"
+            src="https://source.unsplash.com/800x400/?{fruits}"
+            alt="fruits"
           />
           <Carousel.Caption>
             <h2>Cooking is the Best Way for Relaxing</h2>

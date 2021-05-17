@@ -15,6 +15,7 @@ const RecipesList = ({ recipes }) => {
           recipeCuisine={recipes.recipeCuisine}
           recipeCategory={recipes.recipeCategory}
           link={recipes.id}
+          id={recipes.id}
         />
       ))}
     </div>

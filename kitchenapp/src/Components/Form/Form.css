@@ -38,7 +38,7 @@ p {
   height: 300px;
 }
 #quantity.form-control {
-  width: 10%;
+  width: 30%;
 }
 #recipeInstructions.form-control {
   width: 100%;
