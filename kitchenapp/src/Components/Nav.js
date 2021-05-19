@@ -5,6 +5,9 @@ class Nav extends Component {
   render() {
     return (
       <nav>
+        <button id="mobileButton">
+          <span className="material-icons"> menu </span>
+        </button>
         <ul>
           <li>
             <Link to="/">Home</Link>

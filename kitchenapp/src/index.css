@@ -15,3 +15,39 @@ p.welcomeText {
 h1 {
   text-align: center;
 }
+
+#mobileButton {
+  display: none;
+}
+
+@media (max-width: 899px) {
+  #mobileButton {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+  #mobileButton .material-icons {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  ul {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 85px;
+  }
+
+  nav.responsive ul li {
+    display: block;
+  }
+
+  nav.responsive ul li a {
+    display: block;
+    padding: 1rem 2rem;
+  }
+}
